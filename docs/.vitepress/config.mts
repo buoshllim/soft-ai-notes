@@ -21,9 +21,10 @@ export default defineConfig({
       ],
       '/etc/': [
         {
-          text: '기타 도구',
+          text: '기타',
           items: [
             { text: '정리 중', link: '/etc/' },
+            { text: 'AI야 나를 알려줘', link: '/etc/hr-ax-prompt' },
           ]
         }
       ],
