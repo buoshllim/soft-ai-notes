@@ -52,7 +52,7 @@ Token: 1234567890:ABCdefGHIjklMNOpqrSTUvwxyz
 /reload-plugins
 ```
 
-클르도 코드한테 설치해달라고 요청해도 되지만, 터미널에서 직접 입력하는 것이 안전.
+클로드 코드한테 설치해달라고 요청해도 되지만, 터미널에서 직접 입력하는 것이 안전.
 
 
 ---
@@ -103,6 +103,11 @@ claude --channels plugin:telegram@claude-plugins-official
 /telegram:access pair <받은 6자리 코드>
 ```
 
+> **명령어가 안 될 경우:** Claude한테 말로 요청해도 됨:
+> ```
+> 텔레그램 페어링 코드가 [6자리 코드]야, 승인해줘
+> ```
+
 ---
 
 ## STEP 6. 보안 설정 (이거 꼭 하기를 추천!)
@@ -112,6 +117,11 @@ claude --channels plugin:telegram@claude-plugins-official
 ```
 /telegram:access policy allowlist
 ```
+
+> **명령어가 안 될 경우:** Claude한테 말로 요청해도 됨:
+> ```
+> 텔레그램 접근을 allowlist 정책으로 설정해줘
+> ```
 
 > ⚠️ 이걸 안 하면 **아무나 내 봇에 메시지를 보내서 Claude Code에 접근**할 수 있음.
 > 봇은 기본적으로 공개 상태이므로. 무조건 이 설정 해주는 것이 좋음.
