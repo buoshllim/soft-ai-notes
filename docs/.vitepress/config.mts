@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  markdown: {
+    breaks: true,
+  },
   title: 'AI 활용 기록',
   description: 'AI로 이것저것 해보고 남기는 기록',
   lang: 'ko-KR',
