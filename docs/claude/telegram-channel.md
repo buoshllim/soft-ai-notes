@@ -22,7 +22,7 @@ BotFather 채팅방 들어가서 입력:
 /newbot
 ```
 
-① 봇 이름 입력 (예: `My Claude`)
+① 봇 이름 입력 (예: `My Claude`)<br>
 ② 봇 아이디 입력 (예: `myClaude_bot` — 반드시 `bot`으로 끝나야 함)
 
 그러면 이런 메시지가 옴:
