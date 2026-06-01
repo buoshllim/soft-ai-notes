@@ -40,14 +40,18 @@ Token: 1234567890:ABCdefGHIjklMNOpqrSTUvwxyz
 
 ## STEP 2. 텔레그램 플러그인 설치
 
-맥 터미널에서 Claude Code 실행 후 입력:
+맥 터미널에서 Claude Code 실행 후 아래 두 명령어를 **순서대로 하나씩** 입력:
 
 ```
 /plugin install telegram@claude-plugins-official
+```
+
+설치가 완료되면 이어서:
+
+```
 /reload-plugins
 ```
 
-첫 번째 줄이 설치, 두 번째 줄이 적용. 둘 다 입력해야 함.
 클르도 코드한테 설치해달라고 요청해도 되지만, 터미널에서 직접 입력하는 것이 안전.
 
 
