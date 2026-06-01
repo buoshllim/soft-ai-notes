@@ -40,11 +40,17 @@ Token: 1234567890:ABCdefGHIjklMNOpqrSTUvwxyz
 
 ## STEP 2. 텔레그램 플러그인 설치
 
-맥 터미널에서 **일반 모드로** Claude Code 실행 (`claude` 입력) 후, 아래 두 명령어를 **순서대로 하나씩** 입력:
+맥 터미널에서 **일반 모드**로 Claude Code 실행 (`claude` 입력) 후, 아래 두 명령어를 **순서대로 하나씩** 입력:
 
 ```
 /plugin install telegram@claude-plugins-official
 ```
+
+> 플러그인을 찾을 수 없다는 오류가 나면 마켓플레이스를 먼저 추가해야 함:
+> ```
+> /plugin marketplace add anthropics/claude-plugins-official
+> ```
+> 그 다음 다시 설치 시도.
 
 설치가 완료되면 이어서:
 
@@ -52,39 +58,32 @@ Token: 1234567890:ABCdefGHIjklMNOpqrSTUvwxyz
 /reload-plugins
 ```
 
-클로드 코드한테 설치해달라고 요청해도 되지만, 터미널에서 직접 입력하는 것이 안전.
-
-
 ---
 
 ## STEP 3. 봇 토큰 등록
 
-Claude Code 안에서 입력:
+같은 세션에서 (아직 일반 모드), 아래 형식으로 입력 — 토큰을 바로 뒤에 붙여서 한 줄로:
 
 ```
-/telegram:configure
+/telegram:configure 여기에토큰붙여넣기
 ```
 
-그 다음, 아까 복사한 토큰 붙여넣기 → 엔터.
+예시:
+```
+/telegram:configure 1234567890:ABCdefGHIjklMNOpqrSTUvwxyz
+```
+
 `~/.claude/channels/telegram/.env`에 자동 저장됨.
-
-> **명령어가 안 될 경우:** 슬래시 명령어 대신 Claude한테 말로 요청해도 됨.
-> 터미널에서 아래처럼 입력하면 Claude가 직접 설정 파일에 써줌:
-> ```
-> 텔레그램 봇 토큰이 [복사한 토큰]인데 설정해줘
-> ```
 
 ---
 
 ## STEP 4. 텔레그램 채널로 Claude 재시작
 
-STEP 2~3을 진행한 Claude를 종료(`/exit` 또는 Ctrl+C)하고, 아래 명령어로 다시 시작해야 함:
+지금까지 쓰던 Claude를 종료(`/exit` 또는 Ctrl+C)하고, 아래 명령어로 다시 시작:
 
 ```bash
 claude --channels plugin:telegram@claude-plugins-official
 ```
-
-직접 입력하기 어려우면 메모에 복사해 뒀다가 붙여넣고 엔터 치면 편함.
 
 > ⚠️ **이 창을 닫지 말고 열어둬야 함.** 이 상태에서 바로 아래 STEP 5로 이어서 진행.
 
@@ -102,11 +101,6 @@ claude --channels plugin:telegram@claude-plugins-official
 /telegram:access pair <받은 6자리 코드>
 ```
 
-> **명령어가 안 될 경우:** Claude한테 말로 요청해도 됨:
-> ```
-> 텔레그램 페어링 코드가 [6자리 코드]야, 승인해줘
-> ```
-
 ---
 
 ## STEP 6. 보안 설정 (이거 꼭 하기를 추천!)
@@ -116,11 +110,6 @@ claude --channels plugin:telegram@claude-plugins-official
 ```
 /telegram:access policy allowlist
 ```
-
-> **명령어가 안 될 경우:** Claude한테 말로 요청해도 됨:
-> ```
-> 텔레그램 접근을 allowlist 정책으로 설정해줘
-> ```
 
 > ⚠️ 이걸 안 하면 **아무나 내 봇에 메시지를 보내서 Claude Code에 접근**할 수 있음.
 > 봇은 기본적으로 공개 상태이므로. 무조건 이 설정 해주는 것이 좋음.
