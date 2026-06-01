@@ -1,6 +1,6 @@
 # 텔레그램으로 Claude Code 쓰기
 
-Claude Code를 텔레그램과 연결하면? **외출 중에도 스마트폰으로 Claude한테 말 걸 수 있음.**
+Claude Code를 텔레그램과 연결하면 **외출 중에도 스마트폰으로 Claude한테 말 걸 수 있음.**
 
 "이 파일 요약해줘", "코드 리뷰해줘" — 카톡 보내듯이.
 
@@ -11,6 +11,11 @@ Anthropic이 2025년에 공식 출시한 **Claude Code Channels** 기능임.
 ## STEP 1. 텔레그램 봇 만들기
 
 텔레그램 앱을 열고 검색창에 `@BotFather` 검색.
+
+![BotFather 검색 화면](/images/botfather-search.png)
+
+> 파란 체크(인증 마크) 붙은 **BotFather**만 맞음. 비슷한 이름의 다른 봇에 들어가면 안 됨.
+
 BotFather 채팅방 들어가서 입력:
 
 ```
