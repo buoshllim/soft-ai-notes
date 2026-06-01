@@ -78,16 +78,15 @@ Claude Code 안에서 입력:
 
 ## STEP 4. 텔레그램 채널로 Claude 실행
 
-이제 Claude를 실행할 때 텔레그램을 "듣는" 모드로 켜야 함.
 기존에는 `claude` 만 입력했지만, 대신 아래와 같이 실행해야 함:
 
 ```bash
 claude --channels plugin:telegram@claude-plugins-official
 ```
 
-
-이 명령어로 켤 때마다 텔레그램 메시지를 받을 수 있음.
 직접 입력하기 어려우면 메모에 복사해 뒀다가 붙여넣고 엔터 치면 편함.
+
+> ⚠️ **이 창을 닫지 말고 열어둬야 함.** 이 상태에서 바로 아래 STEP 5로 이어서 진행.
 
 ---
 
