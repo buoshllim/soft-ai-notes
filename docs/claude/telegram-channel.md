@@ -40,7 +40,7 @@ Token: 1234567890:ABCdefGHIjklMNOpqrSTUvwxyz
 
 ## STEP 2. 텔레그램 플러그인 설치
 
-맥 터미널에서 Claude Code 실행 후 아래 두 명령어를 **순서대로 하나씩** 입력:
+맥 터미널에서 **일반 모드로** Claude Code 실행 (`claude` 입력) 후, 아래 두 명령어를 **순서대로 하나씩** 입력:
 
 ```
 /plugin install telegram@claude-plugins-official
@@ -76,9 +76,9 @@ Claude Code 안에서 입력:
 
 ---
 
-## STEP 4. 텔레그램 채널로 Claude 실행
+## STEP 4. 텔레그램 채널로 Claude 재시작
 
-기존에는 `claude` 만 입력했지만, 대신 아래와 같이 실행해야 함:
+STEP 2~3을 진행한 Claude를 종료(`/exit` 또는 Ctrl+C)하고, 아래 명령어로 다시 시작해야 함:
 
 ```bash
 claude --channels plugin:telegram@claude-plugins-official
