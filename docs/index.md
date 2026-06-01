@@ -10,9 +10,12 @@ hero:
       link: /claude/cc-beginner
 
 features:
-  - title: Claude
-    details: 설치, 세팅 등 사용 후기
+  - title: Claude Code 설치 및 초기 세팅
+    details: macOS/Windows 설치부터 초기 세팅까지
     link: /claude/cc-beginner
+  - title: 텔레그램으로 Claude Code 쓰기
+    details: 스마트폰에서 카톡 보내듯 Claude 사용하기
+    link: /claude/telegram-channel
   - title: 기타 도구
     details: n8n, Copilot 등
     link: /etc/

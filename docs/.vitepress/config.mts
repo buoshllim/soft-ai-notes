@@ -16,6 +16,7 @@ export default defineConfig({
           text: 'Claude',
           items: [
             { text: 'Claude Code 설치 및 초기 세팅', link: '/claude/cc-beginner' },
+            { text: '텔레그램으로 Claude Code 쓰기', link: '/claude/telegram-channel' },
           ]
         }
       ],
