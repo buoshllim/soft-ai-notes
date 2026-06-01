@@ -12,7 +12,7 @@ Anthropic이 2025년에 공식 출시한 **Claude Code Channels** 기능임.
 
 텔레그램 앱을 열고 검색창에 `@BotFather` 검색.
 
-![BotFather 검색 화면](/images/botfather-search.png)
+<img src="/images/botfather-search.png" alt="BotFather 검색 화면" style="width: 320px; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 24px;" />
 
 > 파란 체크(인증 마크) 붙은 **BotFather**만 맞음. 비슷한 이름의 다른 봇에 들어가면 안 됨.
 
