@@ -24,7 +24,6 @@ BotFather 채팅방 들어가서 입력:
 ```
 
 ① 봇 이름 입력 (예: `My Claude`)
-
 ② 봇 아이디 입력 (예: `myClaude_bot` — 반드시 `bot`으로 끝나야 함)
 
 
@@ -71,7 +70,6 @@ Claude Code 안에서 입력:
 ## STEP 4. 텔레그램 채널로 Claude 실행
 
 이제 Claude를 실행할 때 텔레그램을 "듣는" 모드로 켜야 함.
-
 기존에는 `claude` 만 입력했지만, 대신 아래와 같이 실행해야 함:
 
 ```bash
@@ -87,11 +85,8 @@ claude --channels plugin:telegram@claude-plugins-official
 ## STEP 5. 내 계정 페어링
 
 ① 텔레그램에서 내가 만든 봇 검색 (예: `@myClaude_bot`)
-
 ② 봇한테 아무 메시지나 보내기 (예: `안녕`)
-
 ③ 봇이 **6자리 숫자 코드**를 답장해줌
-
 
 ④ 다시 맥 터미널로 돌아와서 입력:
 
@@ -117,7 +112,6 @@ claude --channels plugin:telegram@claude-plugins-official
 ## 완료! 테스트
 
 텔레그램에서 봇한테 메시지 보내 보기!
-
 Claude가 답하면 성공! 🎉
 
 ---
