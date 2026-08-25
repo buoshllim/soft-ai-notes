@@ -16,7 +16,7 @@ features:
   - title: 텔레그램으로 Claude Code 쓰기
     details: 스마트폰에서 카톡 보내듯 Claude 사용하기
     link: /claude/telegram-channel
-  - title: 기타 도구
-    details: n8n, Copilot 등
-    link: /etc/
+  - title: 기타
+    details: AI야 나를 알려줘
+    link: /etc/hr-ax-prompt
 ---
