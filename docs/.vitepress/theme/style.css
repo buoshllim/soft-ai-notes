@@ -1,0 +1,6 @@
+/* 코드블록 복사 버튼 항상 표시 */
+.vp-doc div[class*='language-'] button.copy {
+  opacity: 1 !important;
+  background-color: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+}
